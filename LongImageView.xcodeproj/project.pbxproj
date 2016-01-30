@@ -15,6 +15,8 @@
 		B87C66F71C5CABE9004CDCEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B87C66F51C5CABE9004CDCEE /* LaunchScreen.storyboard */; };
 		B87C67021C5CABE9004CDCEE /* LongImageViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B87C67011C5CABE9004CDCEE /* LongImageViewTests.m */; };
 		B87C670D1C5CABE9004CDCEE /* LongImageViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B87C670C1C5CABE9004CDCEE /* LongImageViewUITests.m */; };
+		B87C671B1C5CAC1C004CDCEE /* longImg.png in Resources */ = {isa = PBXBuildFile; fileRef = B87C671A1C5CAC1C004CDCEE /* longImg.png */; };
+		B87C671E1C5CAC53004CDCEE /* GDLongScrollImgView.m in Sources */ = {isa = PBXBuildFile; fileRef = B87C671D1C5CAC53004CDCEE /* GDLongScrollImgView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		B87C67081C5CABE9004CDCEE /* LongImageViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LongImageViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B87C670C1C5CABE9004CDCEE /* LongImageViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LongImageViewUITests.m; sourceTree = "<group>"; };
 		B87C670E1C5CABE9004CDCEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B87C671A1C5CAC1C004CDCEE /* longImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = longImg.png; sourceTree = "<group>"; };
+		B87C671C1C5CAC53004CDCEE /* GDLongScrollImgView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDLongScrollImgView.h; sourceTree = "<group>"; };
+		B87C671D1C5CAC53004CDCEE /* GDLongScrollImgView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDLongScrollImgView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +110,9 @@
 				B87C66EB1C5CABE9004CDCEE /* AppDelegate.m */,
 				B87C66ED1C5CABE9004CDCEE /* ViewController.h */,
 				B87C66EE1C5CABE9004CDCEE /* ViewController.m */,
+				B87C671C1C5CAC53004CDCEE /* GDLongScrollImgView.h */,
+				B87C671D1C5CAC53004CDCEE /* GDLongScrollImgView.m */,
+				B87C671A1C5CAC1C004CDCEE /* longImg.png */,
 				B87C66F01C5CABE9004CDCEE /* Main.storyboard */,
 				B87C66F31C5CABE9004CDCEE /* Assets.xcassets */,
 				B87C66F51C5CABE9004CDCEE /* LaunchScreen.storyboard */,
@@ -243,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B87C671B1C5CAC1C004CDCEE /* longImg.png in Resources */,
 				B87C66F71C5CABE9004CDCEE /* LaunchScreen.storyboard in Resources */,
 				B87C66F41C5CABE9004CDCEE /* Assets.xcassets in Resources */,
 				B87C66F21C5CABE9004CDCEE /* Main.storyboard in Resources */,
@@ -272,6 +281,7 @@
 			files = (
 				B87C66EF1C5CABE9004CDCEE /* ViewController.m in Sources */,
 				B87C66EC1C5CABE9004CDCEE /* AppDelegate.m in Sources */,
+				B87C671E1C5CAC53004CDCEE /* GDLongScrollImgView.m in Sources */,
 				B87C66E91C5CABE9004CDCEE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

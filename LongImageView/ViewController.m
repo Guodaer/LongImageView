@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "GDLongScrollImgView.h"
 @interface ViewController ()
 
 @end
@@ -17,6 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    //750：5039
+    GDLongScrollImgView *longImg = [[GDLongScrollImgView alloc] initWithFrame:self.view.bounds WithLongImageName:@"longImg" AndImgWidth:750.f Height:5039.f];
+    [self.view addSubview:longImg];
+    
 }
 
 - (void)didReceiveMemoryWarning {
