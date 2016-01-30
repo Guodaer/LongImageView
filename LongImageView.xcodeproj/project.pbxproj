@@ -17,6 +17,7 @@
 		B87C670D1C5CABE9004CDCEE /* LongImageViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B87C670C1C5CABE9004CDCEE /* LongImageViewUITests.m */; };
 		B87C671B1C5CAC1C004CDCEE /* longImg.png in Resources */ = {isa = PBXBuildFile; fileRef = B87C671A1C5CAC1C004CDCEE /* longImg.png */; };
 		B87C671E1C5CAC53004CDCEE /* GDLongScrollImgView.m in Sources */ = {isa = PBXBuildFile; fileRef = B87C671D1C5CAC53004CDCEE /* GDLongScrollImgView.m */; };
+		B87C67211C5CBC2F004CDCEE /* img.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B87C67201C5CBC2F004CDCEE /* img.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,9 +54,10 @@
 		B87C67081C5CABE9004CDCEE /* LongImageViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LongImageViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B87C670C1C5CABE9004CDCEE /* LongImageViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LongImageViewUITests.m; sourceTree = "<group>"; };
 		B87C670E1C5CABE9004CDCEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B87C671A1C5CAC1C004CDCEE /* longImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = longImg.png; sourceTree = "<group>"; };
+		B87C671A1C5CAC1C004CDCEE /* longImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = longImg.png; path = ../longImg.png; sourceTree = "<group>"; };
 		B87C671C1C5CAC53004CDCEE /* GDLongScrollImgView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDLongScrollImgView.h; sourceTree = "<group>"; };
 		B87C671D1C5CAC53004CDCEE /* GDLongScrollImgView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDLongScrollImgView.m; sourceTree = "<group>"; };
+		B87C67201C5CBC2F004CDCEE /* img.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = img.bundle; path = KeepCarScroll/img.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +114,8 @@
 				B87C66EE1C5CABE9004CDCEE /* ViewController.m */,
 				B87C671C1C5CAC53004CDCEE /* GDLongScrollImgView.h */,
 				B87C671D1C5CAC53004CDCEE /* GDLongScrollImgView.m */,
-				B87C671A1C5CAC1C004CDCEE /* longImg.png */,
+				B87C67201C5CBC2F004CDCEE /* img.bundle */,
+				B87C671F1C5CBAD4004CDCEE /* KeepCarScroll */,
 				B87C66F01C5CABE9004CDCEE /* Main.storyboard */,
 				B87C66F31C5CABE9004CDCEE /* Assets.xcassets */,
 				B87C66F51C5CABE9004CDCEE /* LaunchScreen.storyboard */,
@@ -146,6 +149,14 @@
 				B87C670E1C5CABE9004CDCEE /* Info.plist */,
 			);
 			path = LongImageViewUITests;
+			sourceTree = "<group>";
+		};
+		B87C671F1C5CBAD4004CDCEE /* KeepCarScroll */ = {
+			isa = PBXGroup;
+			children = (
+				B87C671A1C5CAC1C004CDCEE /* longImg.png */,
+			);
+			path = KeepCarScroll;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B87C671B1C5CAC1C004CDCEE /* longImg.png in Resources */,
+				B87C67211C5CBC2F004CDCEE /* img.bundle in Resources */,
 				B87C66F71C5CABE9004CDCEE /* LaunchScreen.storyboard in Resources */,
 				B87C66F41C5CABE9004CDCEE /* Assets.xcassets in Resources */,
 				B87C66F21C5CABE9004CDCEE /* Main.storyboard in Resources */,
@@ -422,6 +434,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LongImageView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.chaui.cn.LongImageView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -433,6 +446,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LongImageView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.chaui.cn.LongImageView;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -7,9 +7,14 @@
 //
 
 #import "GDLongScrollImgView.h"
+#define bundlePath [[NSBundle mainBundle].resourcePath stringByAppendingPathComponent:@"img.bundle"]
+
+#define bundle [NSBundle bundleWithPath:bundlePath]
+
+#define XUIBundleImage(imgName) [UIImage imageWithContentsOfFile:[bundle pathForResource:imgName ofType:@"png"]]
+
 @interface GDLongScrollImgView ()
 {
-    
 
 }
 //@property (nonatomic, strong) UIScrollView *scrollView;
@@ -34,11 +39,10 @@
     bgImg.backgroundColor = [UIColor whiteColor];
     [self addSubview:bgImg];
     
-    bgImg.image = [UIImage imageNamed:imgName];
-
+//    bgImg.image = [UIImage imageNamed:imgName];
+    bgImg.image = XUIBundleImage(imgName);
     
-//    bgImg.bounds = CGRectMake(0, 0, self.frame.size.width, self.frame.size.width*height/width);
+    
     self.contentSize = CGSizeMake(self.frame.size.width, bgImg.bounds.size.height);
-//    self.contentOffset = CGPointMake(0, 0);
 }
 @end
