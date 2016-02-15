@@ -22,11 +22,13 @@
 
 @implementation GDLongScrollImgView
 
-- (instancetype) initWithFrame:(CGRect)frame WithLongImageName:(NSString *)imageName AndImgWidth:(float)width Height:(float)height {
+- (instancetype) initWithFrame:(CGRect)frame WithLongImageName:(NSString *)imageName{
 
     self = [super initWithFrame:frame];
     if (self) {
-        [self createScrollViewWithImg:imageName AndWidth:width Height:height];
+        UIImage *image = XUIBundleImage(imageName);
+        
+        [self createScrollViewWithImg:imageName AndWidth:image.size.width Height:image.size.height];
 
     }
 

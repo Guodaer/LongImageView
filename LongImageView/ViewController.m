@@ -19,7 +19,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     //750：5039
-    GDLongScrollImgView *longImg = [[GDLongScrollImgView alloc] initWithFrame:self.view.bounds WithLongImageName:@"longImg" AndImgWidth:750.f Height:5039.f];
+    GDLongScrollImgView *longImg = [[GDLongScrollImgView alloc] initWithFrame:self.view.bounds WithLongImageName:@"longImg"];
     [self.view addSubview:longImg];
     
 }

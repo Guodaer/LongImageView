@@ -15,7 +15,7 @@
 
 @interface GDLongScrollImgView : UIScrollView
 
-- (instancetype)initWithFrame:(CGRect)frame WithLongImageName:(NSString *)imageName AndImgWidth:(float)width Height:(float)height;
+- (instancetype)initWithFrame:(CGRect)frame WithLongImageName:(NSString *)imageName;
 
 
 
